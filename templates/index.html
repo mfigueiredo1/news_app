@@ -2,13 +2,13 @@
 
 {% block body %}
 
-<dib class="container">
+<div class="container">
     <h1 class="my-4 text-center">Welcome to Insta-News</h1>
     <div class="row">
         {% for article in articles %}
         <div class="col-md-6">
             <div class="card mb-4 news-article">
-                {% if aritcle.urlToImage %}
+                {% if article.urlToImage %}
                 <img src="{{article.urlToImage}}" alt="picture" class="card-img-top">
                 {% endif %}
                 <div class="card-body">
@@ -20,7 +20,7 @@
 
         {% endfor %}
     </div>
-</dib>
-<h1> Subscribe to My Channel!</h1>
+</div>
+
 
 {% endblock %}

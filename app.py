@@ -18,7 +18,10 @@ def index():
     news_data = response.json()
     #print(news_data)
 
-    return render_template("index.html")
+
+    articles = news_data.get('articles', [])
+        
+    return render_template("index.html", articles=articles)
 
 
 
