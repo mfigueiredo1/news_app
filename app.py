@@ -10,6 +10,8 @@ app = Flask(__name__)
 
 # Homepage - Route
 # Home / About / Contact / Pricing
+
+
 @app.route("/")
 def index():
     query = request.args.get("query","latest")
