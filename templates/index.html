@@ -2,11 +2,11 @@
 
 {% block body %}
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Insta-News</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -37,19 +37,17 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="/?query=technology">Technology</a>
           </li>
-    
+
         </ul>
       </div>
     </div>
-  </nav>
-
-
+</nav>
 
 <div class="container">
     <h1 class="my-4 text-center">Welcome to Insta-News</h1>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+    <form class="form-inline justify-content-center mb-4" method="get" action="/">
+      <input class="form-control mr-5" type="text" name="query" value="{{query}}" placeholder="Search for news here...">
+      <button id="search-btn" class="btn btn-primary" type="submit">Search</button>
     </form>
     <div class="row">
         {% for article in articles %}
