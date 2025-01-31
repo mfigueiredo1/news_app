@@ -22,6 +22,11 @@ def index():
 
 
     articles = news_data.get('articles', [])
+
+    filtered_articles = [article for article in articles if "Yahoo" not in article["source"]["name"]] and 'removed'
+    not in article[["title"].lower()]
+                         
+                         
         
     return render_template("index.html", articles=articles)
 
