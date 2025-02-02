@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "name": "flask_bootstrap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mfigueiredo1/news_app.git",
+  "author": "Michael Figueiredo <michaelfigueiredo743@gmail.com>",
+  "license": "MIT"
+}

@@ -1,3 +1,43 @@
-body {
-    background-color: aliceblue;
+$primary-color: #f09749;
+$secondary-color: #2e82cc;
+$background-color: #f5ebcb;
+$text-color: #333;
+$border-color: #ccc;
+$font-family-main:'Papyrus', Helvetica, Arial, sans-serif;
+$font-family: 'Helvetica', Helvetica, Arial, sans-serif;
+
+// Override bootstrap 
+
+// import saas
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+    background-color: $background-color;
+    color: $text-color;
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: $primary-color;
+    padding: 25px 15px;
+    font-family: $font-family-main;
+    .navbar-brand{
+        color: white;
+        font-size: 2rem;
+        
+        &:hover{
+            color: white;
+        }
+    }
+    .nav-link{
+        color: white;
+        &:hover {
+            color: darken(white, 10%);
+            text-decoration: underline;
+        }
+    }
+    .navbar-toggler {
+        border-color: rgba(255, 255, 255, 0.5);
+    }
 }
