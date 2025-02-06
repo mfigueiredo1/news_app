@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 import requests
+import config
 from config import NEWS_API_KEY
 
 
