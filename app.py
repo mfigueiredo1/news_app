@@ -1,12 +1,6 @@
 from flask import Flask, request, render_template
 import requests
-import config
 from config import NEWS_API_KEY
-import os
-
-# Fetch the API key from environment variable
-NEWS_API_KEY = os.getenv("NEWS_API_KEY")  # Ensure NEWS_API_KEY is set in your environment
-
 
 
 #Create a flask app
